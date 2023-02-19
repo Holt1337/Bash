@@ -35,5 +35,5 @@ done
 mkdir $BACKUP_FOLDER  &> /dev/null
 
 find $INPUT_FOLDER -name $EXTENSION -exec cp -rp --parent {} $BACKUP_FOLDER \;
-tar -cvf $ARCHIVE_NAME $BACKUP_FOLDER  &> /dev/null
+tar -czvf $ARCHIVE_NAME $BACKUP_FOLDER  &> /dev/null
 echo done
